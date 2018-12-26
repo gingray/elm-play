@@ -1,0 +1,13 @@
+.header-container
+  @include grid-container
+  background-color: $primary-light-color
+  color: #212121
+  height: 60px
+  line-height: 60px
+
+  .header-logo
+    @include grid-column(1)
+  .header-text
+    @include grid-column(11)
+    text-align: center
+    font-size: $font-large

@@ -1,0 +1,30 @@
+@import "node_modules/normalize-scss/sass/normalize/_import-now.scss"
+@import "node_modules/bourbon-neat/core/_neat.scss"
+@import "stylesheets/variables"
+@import "stylesheets/header.sass"
+
+body, html, [data-elm-hot], .root-container
+  font-family: 'Roboto', sans-serif
+  height: 100%
+
+.content-container
+  margin-left: $sidebar-width
+  height: 100%
+
+.sidebar-container
+  float: left
+  margin-left: -$sidebar-width
+  background-color: $background-color
+  height: 100%
+  width: $sidebar-width
+  color: white
+  padding-top: 40px
+
+  .stock-item
+    margin-bottom: $small-margin
+    padding: 10px
+    text-align: center
+
+    a
+      color: white
+      text-decoration: none
